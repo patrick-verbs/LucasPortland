@@ -1,0 +1,267 @@
+
+@font-face {
+	font-family: din;
+	src: url("../fonts/DIN-Black.woff");
+}
+
+@font-face {
+	font-family: din-med;
+	src: url("../fonts/DIN-Medium.woff");
+}
+
+@font-face {
+	font-family: futura;
+	src: url("../fonts/FuturaTOT-Bold.woff");
+}
+
+html { 
+  background: url("../img/background.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+/*
+body {
+	background: url("../img/background.png");
+}
+*/
+
+#siteWrapper {
+	height: 100vh;
+}
+
+#leftSide {
+	max-width: 50%;
+	width: 50%;
+	min-height: 100vh;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#leftSide img {
+	width: 55%;
+	max-width: 55%;
+
+}
+
+#rightWrapper {
+	display: flex;
+	align-items: center;
+	height: 100%;
+
+}
+
+#rightSide {	
+	min-height: 90%;
+	float: right;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#rightSide a {
+	color: black;
+	text-decoration: none;
+
+}
+
+#rightSide a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+#rightSide a:hover, #rightSide a:focus {
+	color: #E4F542;
+
+}
+.contact {
+	font-family: din-med;
+	text-align: center;
+}
+
+
+.address {
+	font-size: 18pt;
+	letter-spacing: .2em;
+}
+
+.phone {
+	font-size: 36pt;
+	letter-spacing: .2em;
+}
+
+.appointment {
+	font-family: futura;
+	font-size: 18pt;
+	letter-spacing: .2em;
+	border-bottom: 3px #EFA69F solid;
+}
+
+
+.instagram {
+	font-family: futura;
+	font-size: 17pt;
+	letter-spacing: .2em;
+
+}
+
+@media only screen and (max-width: 870px){
+
+
+	.contact {
+
+	}
+
+	.address {
+		font-size: 15.43px;
+	}
+
+	.phone {
+		font-size: 31.09px;
+	}
+
+	.appointment {
+		font-size: 16.16px;
+	}
+
+	.instagram {
+		font-size: 15.43px;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	#leftSide {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		position: absolute;
+		top: 22%;
+		left: 25%;
+		min-height: auto;
+		height: auto;
+	}
+
+	#leftSide img {
+		width: 110%;
+		max-width: 110%;
+	}
+
+	#rightSide {
+		max-width: auto;
+		width: 100%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.appointment {
+		position: absolute;
+		top: 5%;
+		width: 40%;
+		text-align: center;
+		letter-spacing: 7px;
+		font-size: 12.16px;
+		left: 30%;
+	}
+
+	.contact {
+		position: absolute;
+		top: 12%;
+		left: 16%;
+		width: 70%;
+	}
+
+	.address{
+		font-size: 12.16px;
+	}
+
+	.phone {
+		font-size: 25.09px;
+	}
+
+	.instagram {
+		position: absolute;
+		right: 5%;
+		bottom: 5%;
+		font-size: 12.16px;
+	}
+}
+
+
+@media only screen and (max-width: 375px){
+	html {
+		margin-left: auto;
+		margin-right: auto;
+		display: inline-block;
+	}
+
+	#leftSide {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		position: absolute;
+		top: 28%;
+		left: 25%;
+		min-height: auto;
+		height: auto;
+	}
+
+	#leftSide img {
+		width: 110%;
+		max-width: 110%;
+	}
+
+	#rightSide {
+		max-width: auto;
+		width: 100%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.appointment {
+		position: absolute;
+		top: 5%;
+		width: 40%;
+		text-align: center;
+		letter-spacing: 7px;
+		font-size: 12.16px;
+	}
+
+	.contact {
+		position: absolute;
+		top: 18%;
+	}
+
+	.address{
+		font-size: 12.16px;
+	}
+
+	.phone {
+		font-size: 25.09px;
+	}
+
+	.instagram {
+		position: absolute;
+		right: 5%;
+		bottom: 5%;
+		font-size: 12.16px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.appointment {
+		width: 46%;
+	}
+}
